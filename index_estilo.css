@@ -1,0 +1,86 @@
+*{
+    font-family: monserrat;
+}
+body{
+    background: linear-gradient(150deg,purple, fuchsia,orange);
+}
+
+#carouselInicio{
+   /* background-color: purple;*/
+    width: 100%;/*esto no es necesario*/
+}
+.c-item {
+    height: 400px;
+    width: 100%;    
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    align-content: center;
+    filter:brightness(0.9); /*Para que luzca más oscuro*/
+}
+#hola{
+    display: grid;
+    place-items: center;
+}
+#hola h2,
+#hola h1{
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+    font-size: 50px;
+}
+
+
+
+.clear{
+    clear:both;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: auto;
+    line-height: 60px;
+}
+
+
+/*artistas destacados*/
+#art-d{
+    padding-top: 20px;
+    margin: 20px;
+}
+#art-d .col-lg-4{
+    margin: 0 !important;
+    padding: 40px;
+    
+}
+
+#art-d img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;  
+    border:8px solid rgb(255, 187, 0);/*rgb(255, 217, 0)*/
+    border-radius: 300px;
+    max-width: 350px;
+}
+
+/*Productos*/
+#pro{
+    padding-top: 20px;
+    margin: 20px;
+}
+#pro .col-lg-4{
+    margin: 0 !important;
+    padding: 40px;
+    
+}
+
+#pro img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;  
+    border:8px solid yellow;/*rgb(229, 255, 0)*/
+    border-radius: 300px;
+    max-width: 350px;
+}
