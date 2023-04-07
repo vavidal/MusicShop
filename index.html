@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Shop</title>
+    <!--Bootstap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+    crossorigin="anonymous">
+
+    <!--vincular a css-->
+    <link rel="stylesheet" href="index_estilo.css"/>
+</head>
+<body>
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav" >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"><img src="img/musicShop.jpeg" alt="MusicShopLogo" width="40" height=auto></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRODUCTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="artista.html">ARTISTAS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CONTACTO
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Instagram</a></li>
+              <li><a class="dropdown-item" href="#">musicshop@gmail.com</a></li>
+              <li><a class="dropdown-item" href="#">+569 12345678</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              MI CUENTA
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Registro</a></li>
+              <li><a class="dropdown-item" href="login.html">Mi cuenta</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+    <!--Carrusel de fotos-->
+    <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item"><!--c-item para controlar tamaño del carruese con CSS-->
+                <img src="img/cassettes.jpg" class="d-block w-100 c-img" alt="..."><!--c-img es un nombre para controlar el tamaño de la imagen-->
+                <div id="hola" class="carousel-caption top-0 ">
+                  <h2>The</h2>
+                  <h1>Music Shop</h1>
+                 </div>
+              </div>
+            <div class="carousel-item c-item"><!--c-item para controlar tamaño del carruese con CSS-->
+              <img src="img/cassette.jpg" class="d-block w-100 c-img" alt="..."><!--c-img es un nombre para controlar el tamaño de la imagen-->
+              <div class="carousel-caption">
+                    <h3>El mejor lugar para encontrar la música que quieres</h3>
+              </div>
+            </div>
+            <div class="carousel-item c-item"><!--c-item para controlar tamaño del carruese con CSS-->
+              <img src="img/vinilo.jpg" class="d-block w-100 c-img" alt="..."><!--c-img es un nombre para controlar el tamaño de la imagen-->
+              <div class="carousel-caption top-0 mt-4" style="color: black;">
+                  <h3>Visítanos o compra en línea</h3> 
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="img/ola.jpg" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption top-0 mt-4" style="color: black;">
+                    <h3>Ubicados en la X región de Los Lagos</h3>
+                </div>
+            </div>        
+        </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    <!--Artistas-->
+    <section id="art-d">
+      <div class="text-center" pt-5>
+        <h2>ARTISTAS DESTACADOS</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <img src="img/img_artistas/jackson-wang.jpg" alt="Galeria artistas">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="img/img_artistas/billie-eilish.jpg" alt="Galeria artistas">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="img/img_artistas/ed-sheeran.jpg" alt="Galeria artistas">
+        </div>
+      </div>
+    </section>
+    <div class ="clear">
+    </div>
+    <!--Tipos de productos-->
+    <section id="pro"><!--Si lo cambio sale una linea al costado derecho-->
+    <div class="text-center" pt-5>
+      <h2>Nuestros productos</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <img src="img/cd.jpg" alt="">
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="img/cassette-1.jpg" alt="">
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="img/vi.jpg" alt="">
+      </div>
+    </div>
+    </section>
+      <div class ="clear">
+     </div>
+
+  <!--foorter pie de página-->
+    <div class ="clear">
+    </div>
+    <footer>
+      hola
+
+
+    </footer>
+    
+
+    <!--Para que funcionen los elementos de Bootstap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+</body>
+</html>
