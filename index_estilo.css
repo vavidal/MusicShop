@@ -4,48 +4,66 @@
 body{
     background: linear-gradient(150deg,purple, fuchsia,orange);
 }
-
 #carouselInicio{
-   /* background-color: purple;*/
     width: 100%;/*esto no es necesario*/
 }
 .c-item {
-    height: 400px;
+    height: 450px;
     width: 100%;    
 }
-
 .c-img {
     height: 100%;
     object-fit: cover;
     align-content: center;
-    filter:brightness(0.9); /*Para que luzca más oscuro*/
+    /*filter:brightness(0.8); /*Para que luzca más oscuro*/
 }
-#hola{
+#logo{
     display: grid;
     place-items: center;
 }
-#hola h2,
-#hola h1{
-    font-family:'Courier New', Courier, monospace;
+#logo h2{
+    font-family: 'Dancing Script', cursive;
     color: black;
+    font-size: 60px;
+    text-shadow: 
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    1px 1px 0 white,
+    -1px 1px 0 white;;
+}
+#logo h1{
+    font-family: 'Ultra', serif;
+    color: purple;
+    font-size: 60px;
+    text-shadow: 
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    2px 2px 0 black,
+    -2px 2px 0 black;  
+}
+#texto{
+    display: grid;
+    place-items: center;
+}
+#texto h3{
+    font-size: 45px;
+    font-weight: 600;
+    text-shadow: 
+    -1px -1px 0 rgb(43, 41, 41),
+    1px -1px 0 rgb(43, 41, 41),
+    1px 1px 0 rgb(43, 41, 41),
+    -1px 1px 0 rgb(43, 41, 41);  
+    max-width: 600px;
+}
+h2{
+    color: rgb(10, 2, 32);
     font-size: 50px;
 }
-
-
-
-.clear{
-    clear:both;
+h3{
+    font-size: 45px;
+    font-weight: 600;
 }
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    height: auto;
-    line-height: 60px;
-}
-
-
-/*artistas destacados*/
+/*Artistas destacados*/
 #art-d{
     padding-top: 20px;
     margin: 20px;
@@ -64,7 +82,6 @@ footer{
     border-radius: 300px;
     max-width: 350px;
 }
-
 /*Productos*/
 #pro{
     padding-top: 20px;
@@ -75,7 +92,6 @@ footer{
     padding: 40px;
     
 }
-
 #pro img{
     width: 100%;
     height: 350px;
@@ -83,4 +99,11 @@ footer{
     border:8px solid yellow;/*rgb(229, 255, 0)*/
     border-radius: 300px;
     max-width: 350px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: auto;
+    line-height: 60px;
 }
