@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monserrat;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(150deg,purple, fuchsia,orange);
+}
+.contenido{
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    max-width: 450px;
+}
+.contenido h2{
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    border-bottom:solid 2px rgb(171, 171, 241);
+}
+.contenido h6{
+    font-size: 18px;
+}
+.botones #pagar{
+    width: 350px;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: rgb(156, 6, 156);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    letter-spacing: 0.03em;
+}
+
+.botones .btn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 350px;
+    background-color: rgb(150, 75, 221);
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 1.2em;
+    letter-spacing: 0.03em;
+}
