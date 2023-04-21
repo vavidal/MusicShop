@@ -1,38 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Registrate </title>
+    <title> Music Shop - Registro </title>
     <link rel="stylesheet" href="Registrostyle.css">
+    <!--Bootstap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+    crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="box">
-        <form>
-            <h2> Registrate </h2>
-
-            <div class="inputBox">
-                <input type="text" required="required">
-                <span> Crea un nombre de usuario </span>
-                <i></i>
+    <div id="box"class="container mt-4" >
+        <h2>Registro de usuario</h2>
+        <form action="#" id="formulario_feliz" class="row g-3 mt-3 needs-validation" novalidate>
+            <div class="col-6">
+                <label for="nombreIngresado" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="nombre" id="nombreIngresado" placeholder="No ingresar tildes" required>
+                <div class="invalid-feedback">
+                    (*) Campo obligatorio
+                </div>
             </div>
-
-            <div class="inputBox">
-                <input type="text" required="required">
-                <span> Ingresa tu correo electrónico </span>
-                <i></i>
+            <div class="col-6">
+                <label for="apellidoIngresado" class="form-label">Apellido</label>
+                <input type="text" class="form-control" name="apellido" id="apellidoIngresado" placeholder="No ingresar tildes" required>
+                <div class="invalid-feedback">
+                    (*) Campo obligatorio
+                </div>
             </div>
-            <div class="inputBox">
-                <input type="password" required="required">
-                <span> Crea una contraseña </span>
-                <i></i>
+            <div class="col-6">
+                <label for="rutIngresado" class="form-label">RUT</label>
+                <input type="text" class="form-control" name="run" id="rutIngresado" placeholder="Ingrese su rut" required>
+                <div class="invalid-feedback">
+                    (*) Campo obligatorio
+                </div>
             </div>
-            <input type="submit" value="Registrarse">
-            <a class="btn-1" href="index.html"> Cancelar </a>
+            <div class="col-12">
+                <label for="emailIngresado" class="form-label"> Correo electrónico </label>
+                <input type="email" class="form-control" name="correo" id="emailIngresado" placeholder="correo@correo.cl" required>
+                <div class="invalid-feedback">
+                    (*) Campo obligatorio
+                    <br>
+                    Debe ingresar un correo, no debe incluir ñ
+                </div>
+            </div>
+            <div class="col-6" >
+                <label for="usuarioIngresado" class="form-laber">Usuario</label>
+                <input type="text" class="form-control" name="usuario" id="usuarioIngresado" placeholder="Cree su usuario" required>
+                <div class="invalid-feedback">
+                    (*) Campo obligatorio
+                </div>
+            </div>
+            <div class="col-6">
+                <label for="pwsIngresada"class="form-label"> Contraseña </label>
+                <input type="password" class="form-control" name="password" id="pwsIngresada" placeholder="Cree su contraseña" required>
+                <div class="invalid-feedback">
+                    (*) Campo obligatorio
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form check">
+                    <input type="checkbox" name="check" id="checkTerminos" class="form-check-input" required>
+                    <label for="checkTerminos" class="form-check-label">Acepto los términos y condiciones</label>
+                </div> 
+            </div>
+            <div class="col-12">     
+                <button type="submit" >Registrarme </button> <!--btn-primary le da el color azul-->
+                <button type="reset">Limpiar </button>
+                <button type="button"><a class="btn-1" href="index.html">Cancelar</a></button>
+            </div>       
         </form>
     </div>
 
+    <script src="registro_validacion.js"></script>
+
+
+
+
+    <script>
+ // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
 </body>
 </html>
