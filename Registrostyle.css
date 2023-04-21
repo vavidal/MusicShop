@@ -6,112 +6,52 @@
 }
 
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     background: linear-gradient(150deg,purple, fuchsia,orange);
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.box{
+#box{
     position: relative;
-    width: 400px;
-    height: 550px;
+    width: 80%;
     background: white;
     border-radius: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
 }
-.box form {
-    position: absolute;
-    inset: 4px;
-    /*padding: 50px 40px;*/
-    border-radius: 10px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-}
-.box form h2{
-    font-size: 30px;
-    position: relative;
-   /* font-weight: 5000;*/
+#box h2{ 
+    font-size: 36px;
+    font-weight: 600;
     text-align: center;
-   /* letter-spacing: 0.04em;/*espacio entre letras*/
-    padding: 20px;
     border-bottom:solid 2px rgb(171, 171, 241);
-}
-.box form .inputBox{
-    margin-left: 40px;
-    margin-right: 40px;
-    position: relative;
-    width: calc(100% - 80px);
-    margin-top: 35px;
-}
-.box form .inputBox input{
-    position: relative;
     width: 100%;
-    padding: 20px 10px 20px;
-    background: transparent;
-    outline: none; 
-    border: none;
-    /*box-shadow: none;*/
-    color: black;
-    font-size: 1em;
-    transition: 0.8s;
-    z-index: 10;
 }
 
 
-.box form .inputBox span{
-    position: absolute;
-    left: 0;
-    padding: 20px 0px 20px;/*centro a la izquiers*/
-    pointer-events: none;
-    color: rgb(82, 82, 82);
-    font-size: 1em;
-    letter-spacing: 0.1em;
-    transition: 0.5s;
-}
-
-.box form .inputBox input:valid ~ span,
-.box form .inputBox input:focus ~ span{
-    
-    font-size: 0.75em;
-    transform: translateY(-34px);
-
-}
-
-.box form .inputBox i{
-    position: absolute;
-    left: 0;
-    bottom: 0;
+button[type="submit"],
+button[type="reset"],
+button[type="button"]{
     width: 100%;
-    height: 2px;
-    background-color: rgb(52, 52, 250);
-    border-radius: 4px;
-    overflow: hidden;/**/
-    transition: 0.5s ;
-    pointer-events: none;
-}
-
-
-.box form input[type="submit"]{
-    margin: 40px;
     padding: 12px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2em;
+    letter-spacing: 0.03em;
+    margin-bottom: 25px;
+}
+button[type="submit"]{
     background-color: rgb(156, 6, 156);
-    color: white;
-    border: none;
-    border-radius: 30px;
-    font-size: 1.2em;
-    letter-spacing: 0.03em;
 }
 
-.box form .btn-1{
+button[type="reset"]{
+    background-color: rgb(94, 94, 94);
+}
+button[type="button"]{
     background-color: rgb(150, 75, 221);
-    color: white;
-    padding: 12px;
-    margin-left: 40px;
-    margin-right: 40px;
+}
+.btn-1{
     text-decoration: none;
-    text-align: center;
-    border-radius: 30px;
-    font-size: 1.2em;
-    letter-spacing: 0.03em;
+    color: white;
 }
