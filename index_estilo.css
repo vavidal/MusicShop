@@ -89,6 +89,12 @@ h3{
     border-radius: 300px;
     max-width: 350px;
 }
+.accordion-item button{
+    font-size: 25px;
+    font-weight: 600;
+    display:grid;
+    text-align: center;
+}
 /*Productos*/
 #pro{
     padding-top: 20px;
