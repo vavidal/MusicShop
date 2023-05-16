@@ -12,25 +12,35 @@
     crossorigin="anonymous">
 </head>
 <body>
-    <div id="box"class="container mt-4" >
-        <h2>Inicio de sesión</h2>
-        <form action="#" id="formulario_2" class="row g-3 mt-3 needs-validation" novalidate>
-            <div class="col-12">
-                <label for="emailUserIn" class="form-label"> Correo electrónico o Usuario</label>
-                <input type="email" class="form-control" name="correouser" id="emailUserIn" placeholder="correo@correo.cl o user123" required>
-            </div>
-            <div class="col-12">
-                <label for="pwsIngresada"class="form-label"> Contraseña </label>
-                <input type="password" class="form-control" name="password" id="pwsIngresada" placeholder="Ingrese su contraseña" required>
-            </div>
-            
-            <div class="col-12">     
-                <button type="submit" >Registrarme </button> 
-                <button type="reset">Limpiar </button>
-                <button type="button"><a class="btn-1" href="index.html">Cancelar</a></button>
-            </div>       
-        </form>
-    </div>
-    <script src="login_validacion.js"></script>
+<div id="box"class="container mt-4" >
+    <h2>Inicio de sesión</h2>
+    <form action="#" id="formulario_2" class="row g-3 mt-3 needs-validation" novalidate>
+        <div class="col-12">
+            <label for="emailUserIn" class="form-label"> Correo electrónico o Usuario</label>
+            <input type="email" class="form-control" name="correouser" id="emailUserIn" placeholder="correo@correo.cl o user123" required>
+        </div>
+        <div class="col-12">
+            <label for="pwsIngresada"class="form-label"> Contraseña </label>
+            <input type="password" class="form-control" name="password" id="pwsIngresada" placeholder="Ingrese su contraseña" required>
+        </div>
+        
+        <div class="col-12">     
+            <button type="submit" >Registrarme </button> 
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border text-primary" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+              <br>
+            <button type="reset">Limpiar </button>
+            <button type="button"><a class="btn-1" href="index.html">Cancelar</a></button>
+        </div>  
+        <br>     
+    </form>
+</div>
+
+  
+<script src="login_validacion.js"></script>
+
 </body>
 </html>
