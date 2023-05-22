@@ -64,9 +64,12 @@ header h3{
     -1px 1px 0 rgb(43, 41, 41);  
     max-width: 600px;
 }
-h2{
-    color: rgb(10, 2, 32);
-    font-size: 50px;
+#art-d h2,
+#pro h2{
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(238, 234, 234);
+    letter-spacing: 0.1em;
 }
 h3{
     font-size: 45px;
@@ -152,4 +155,17 @@ h3{
     text-align: center;
     color: gray;
     font-size: 20px;
+}
+
+#descripcion-artista{
+    font-size: 20px;
+    text-align: justify;
+    padding: 40px;
+}
+#descripcion-artista strong{
+    font-size: 22px;
+}
+
+#alerta {
+    text-align: center;
 }
