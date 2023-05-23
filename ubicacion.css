@@ -1,0 +1,42 @@
+*{
+    font-family: monserrat;
+}
+body{
+    background: linear-gradient(150deg,purple, fuchsia,orange);
+    min-height: 100vh;
+}
+#texto h1,
+#texto h3,
+#texto p{
+    text-align: center;
+    color: white;
+}
+#texto h1{
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: 0.1em;   
+    padding-top: 50px;
+}
+#texto h3{
+    font-weight: 600;
+    
+}
+#texto p{
+    font-size: 22px;
+}
+
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+#map{
+    width: 60%;
+    height: 400px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    
+}
