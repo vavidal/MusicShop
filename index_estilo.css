@@ -15,12 +15,10 @@ header h3{
 }
 #carouselInicio{
     width: 100%;/*esto no es necesario*/
-
 }
 .c-item {
     height: 450px;
     width: 100%;    
-    margin: 0;
 }
 .c-img {
     height: 100%;
@@ -66,9 +64,12 @@ header h3{
     -1px 1px 0 rgb(43, 41, 41);  
     max-width: 600px;
 }
-h2{
-    color: rgb(10, 2, 32);
-    font-size: 50px;
+#art-d h2,
+#pro h2{
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(238, 234, 234);
+    letter-spacing: 0.1em;
 }
 h3{
     font-size: 45px;
@@ -82,9 +83,7 @@ h3{
 #art-d .col-lg-4{
     margin: 0 !important;
     padding: 40px;
-    
 }
-
 #art-d img{
     width: 100%;
     height: 350px;
@@ -93,6 +92,12 @@ h3{
     border-radius: 300px;
     max-width: 350px;
 }
+.accordion-item button{
+    font-size: 25px;
+    font-weight: 600;
+    display:grid;
+    text-align: center;
+}
 /*Productos*/
 #pro{
     padding-top: 20px;
@@ -100,8 +105,7 @@ h3{
 }
 #pro .col-lg-4{
     margin: 0 !important;
-    padding: 40px;
-    
+    padding: 40px;   
 }
 #pro img{
     width: 100%;
@@ -111,38 +115,36 @@ h3{
     border-radius: 300px;
     max-width: 350px;
 }
-footer{
-    
+
+.pie-pagina{  
     width: 100%;
     background-color: rgb(10, 10, 22);
     color: white;
 }
-.pie-pagina .grupo-1{
+.pie-pagina #grupo-1{
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    display: flex;
     padding-top: 40px;
     padding-bottom: 20px;
 }
-.pie-pagina .grupo-1 .box .insta,
-.pie-pagina .grupo-1 .box .correo,
-.pie-pagina .grupo-1 .box .whatsapp,
-.pie-pagina .grupo-1 .box .dire,
-.pie-pagina .grupo-1 .box .reparto{
+.pie-pagina #grupo-1 #box .insta,
+.pie-pagina #grupo-1 #box .correo,
+.pie-pagina #grupo-1 #box .whatsapp,
+.pie-pagina #grupo-1 #box .dire,
+.pie-pagina #grupo-1 #box .reparto{
     display: flex;
     justify-content: center;
 }
-.pie-pagina .grupo-1 .box h2{
+.pie-pagina #grupo-1 #box h2{
     display: grid;
     place-items: center;
     color: white;
     margin-bottom: 20px;
     font-size: 20px;   
 }
-.pie-pagina .grupo-1 .box p{
+.pie-pagina #grupo-1 #box p{
     margin-bottom: 10px;
     display: grid;
     place-items: center;
@@ -154,11 +156,16 @@ footer{
     color: gray;
     font-size: 20px;
 }
-@media screen and (max-widht:800px){
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
+
+#descripcion-artista{
+    font-size: 20px;
+    text-align: justify;
+    padding: 40px;
+}
+#descripcion-artista strong{
+    font-size: 22px;
+}
+
+#alerta {
+    text-align: center;
 }

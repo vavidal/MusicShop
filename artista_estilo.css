@@ -10,7 +10,7 @@ body{
 #g-artistas h1{
     text-align: center;
     font-weight: 800;
-    font-size: 70px;
+    font-size: 60px;
     color: rgb(238, 234, 234);
     letter-spacing: 0.1em;   
 }
@@ -20,7 +20,7 @@ body{
 }
 #g-artistas img{
     width: 100%;
-    height: 250px;
+    height: 280px;
     object-fit: cover;  
     border:5px solid white;
     max-width: 300px;   
@@ -49,3 +49,10 @@ figure:hover figcaption{
     display: block;
 }
 
+#letrero{
+    margin-top: 4px;
+    font-size: 20px;
+    float: right;
+    font-weight: 500;
+    letter-spacing: 0.08em; 
+}

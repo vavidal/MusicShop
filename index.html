@@ -19,140 +19,227 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ultra&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--Barra de navegación-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav" >
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html"><img src="img/musicShop.jpeg" alt="MusicShopLogo" width="40" height=auto></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="artista.html">ARTISTAS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Newarrives.html">NEW ARRIVES</a> <!--PRODUCTOS-->
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              CONTACTO
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://instagram.com/konlyrics?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-envelope"></i> musicshop@gmail.com</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fa-brands fa-whatsapp" style="color: #071f42;"></i> +569 12345678</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              MI CUENTA
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="Registro.html"><i class="fa-regular fa-pen-to-square"></i> Registro</a></li>
-              <li><a class="dropdown-item" href="login.html"><i class="fa-regular fa-circle-user"></i> Mi cuenta</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Compras.html">CARRITO</a> 
-          </li>
-        </ul>
-      </div>
+  <!--Barra de navegación-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav" >
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html"><img src="img/musicShop.jpeg" alt="MusicShopLogo" width="40" height=auto></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="artista.html">ARTISTAS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Newarrives.html">NEW ARRIVES</a> <!--PRODUCTOS-->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CONTACTO
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://instagram.com/konlyrics?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-envelope"></i> musicshop@gmail.com</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fa-brands fa-whatsapp" style="color: #071f42;"></i> +569 12345678</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            MI CUENTA
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Registro.html"><i class="fa-regular fa-pen-to-square"></i> Registro</a></li>
+            <li><a class="dropdown-item" href="login.html"><i class="fa-regular fa-circle-user"></i> Mi cuenta</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Compras.html">CARRITO</a> 
+        </li>
+      </ul>
     </div>
-    </nav>
-    <!--Promo-->
-    <header>
-      <h3>Envíos GRATIS por compras sobre $60.000</h3>
-    </header>
-    <!--Carrusel de fotos-->
-    <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="3" aria-label="Slide 4"></button>            
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active c-item"><!--c-item para controlar tamaño del carruese con CSS-->
-                <img src="img/cassettes.jpg" class="d-block w-100 c-img" alt="..."><!--c-img es un nombre para controlar el tamaño de la imagen-->
-                <div id="logo" class="carousel-caption top-0 ">
-                  <h2>The</h2>
-                  <img src="img/musicShop.jpeg" alt="MusicShopLogo" width="200" height=auto style="border-radius: 20px;">
-                  <h1>Music Shop</h1>
-                 </div>
-              </div>
-            <div class="carousel-item c-item"><!--c-item para controlar tamaño del carruese con CSS-->
-              <img src="img/vinilo.jpg" class="d-block w-100 c-img" alt="..."><!--c-img es un nombre para controlar el tamaño de la imagen-->
-              <div id="texto" class="carousel-caption">
-                    <h3>El mejor lugar para encontrar la música que quieres</h3>
-              </div>
-            </div>
-            <div class="carousel-item c-item"><!--c-item para controlar tamaño del carruese con CSS-->
-              <img src="img/cassette.jpg" class="d-block w-100 c-img" alt="..."><!--c-img es un nombre para controlar el tamaño de la imagen-->
-              <div class="carousel-caption">                  
-              </div>
-            </div>
-            <div class="carousel-item c-item">
-                <img src="img/ola.jpg" class="d-block w-100 c-img" alt="...">
-                <div id="texto2" class="carousel-caption top-0" style="color: black;">
-                    <br>
-                    <br>
-                    <br>
-                    <h3>Visítanos o compra en línea</h3>
+  </div>
+  </nav>
+  <!--Promo-->
+  <header>
+    <h3>Envíos GRATIS por compras sobre $60.000</h3>
+  </header>
+  <!--Carrusel de fotos-->
+  <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="3" aria-label="Slide 4"></button>            
+      </div>
+      <div class="carousel-inner">
+          <div class="carousel-item active c-item"><!--c-item para controlar tamaño del carruese con CSS-->
+              <img src="img/cassettes.jpg" class="d-block w-100 c-img" alt="..."><!--c-img es un nombre para controlar el tamaño de la imagen-->
+              <div id="logo" class="carousel-caption top-0 ">
+                <h2>The</h2>
+                <img src="img/musicShop.jpeg" alt="MusicShopLogo" width="200" height=auto style="border-radius: 20px;">
+                <h1>Music Shop</h1>
                 </div>
-            </div>        
-        </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-    </div>
-    <!--Artistas-->
-    <section id="art-d">
-      <div class="text-center" pt-5>
-        <br>
-        <h2>Artistas destadados</h2>
+            </div>
+          <div class="carousel-item c-item"><!--c-item para controlar tamaño del carruese con CSS-->
+            <img src="img/vinilo.jpg" class="d-block w-100 c-img" alt="..."><!--c-img es un nombre para controlar el tamaño de la imagen-->
+            <div id="texto" class="carousel-caption">
+                  <h3>El mejor lugar para encontrar la música que quieres</h3>
+            </div>
+          </div>
+          <div class="carousel-item c-item"><!--c-item para controlar tamaño del carruese con CSS-->
+            <img src="img/cassette.jpg" class="d-block w-100 c-img" alt="..."><!--c-img es un nombre para controlar el tamaño de la imagen-->
+            <div class="carousel-caption">                  
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+              <img src="img/ola.jpg" class="d-block w-100 c-img" alt="...">
+              <div id="texto2" class="carousel-caption top-0" style="color: black;">
+                  <br>
+                  <br>
+                  <br>
+                  <h3>Visítanos o compra en línea</h3>
+              </div>
+          </div>        
       </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <img src="img/img_artistas/jackson-wang.jpg" alt="Galeria artistas">
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <img src="img/img_artistas/billie-eilish.jpg" alt="Galeria artistas">
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <img src="img/img_artistas/ed-sheeran.jpg" alt="Galeria artistas">
-        </div>
-      </div>
-    </section>
-    <!--Tipos de productos-->
-    <section id="pro"><!--Si lo cambio sale una linea al costado derecho-->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+  <!--Artistas-->
+  <section id="art-d">
     <div class="text-center" pt-5>
-      <h2>Nuestros productos</h2>
+      <br>
+      <h2>Artistas destadados</h2>
     </div>
     <div class="row">
       <div class="col-lg-4 col-md-6">
-        <img src="img/cd.jpg" alt="">
+        <img src="img/img_artistas/jackson-wang.jpg" alt="Galeria artistas">
+        <br>
+        <br>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Jackson Wang
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="descripcion-artista" class="accordion-body">
+                <strong>Jackson Wang</strong> 
+                <br>
+                Nació el 28 de marzo de 1994 en hangul, Hong Kong.
+                <br>
+                Es un rapero, cantante, compositor, bailarín, modelo y ex-esgrimista hongkonés. 
+                <br>
+                Después de dos años y medio de entrenamiento, fue seleccionado como miembro del nuevo
+                grupo GOT7 de JYP Entertainment y en el año 2017 debutó como solista.
+                <br>
+                <br>
+                <div id="alerta" class="alert alert-info" role="alert">
+                  Escucha una de sus canciones <a href="https://www.youtube.com/watch?v=tct-9S4A56E" class="alert-link" target="_blank">AQUÍ </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+  
       <div class="col-lg-4 col-md-6">
-        <img src="img/cassette-1.jpg" alt="">
+        <img src="img/img_artistas/billie-eilish.jpg" alt="Galeria artistas">
+        <br>
+        <br>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Billie Eilish
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="descripcion-artista" class="accordion-body">
+                <strong>Billie Eilish Pirate Baird O'Connell</strong> 
+                <br>
+                Nació el 18 de diciembre de 2001 en Los Ángeles, California
+                <br>
+                Es una cantante y compositora estadounidense. 
+                <br>
+                Adquirió fama cuando tenía 13 años, 
+                a raíz del sencillo «Ocean Eyes» que se publicó en 2015 en SoundCloud y volvió 
+                a lanzarse con un vídeo musical en YouTube en 2016, lo que la convirtió en un fenómeno viral.
+                <br>
+                <br>
+                <div id="alerta" class="alert alert-info" role="alert">
+                  Escucha Ocean Eyes <a href="https://www.youtube.com/watch?v=viimfQi_pUw" class="alert-link" target="_blank">AQUÍ </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="col-lg-4 col-md-6">
-        <img src="img/vi.jpg" alt="">
+        <img src="img/img_artistas/ed-sheeran.jpg" alt="Galeria artistas">
+        <br>
+        <br>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Ed Sheeran
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="descripcion-artista" class="accordion-body">
+                <strong>Edward Christopher Sheeran</strong>
+                <br>
+                Nació el	17 de febrero de 1991 en Halifax, Yorkshire del Oeste, Reino Unido
+                <br>
+                Es un cantautor y músico británico. Desde niño comenzó a cantar en la iglesia a la que asistía 
+                y también aprendió a tocar la guitarra. A los 16 años abandonó la escuela secundaria, y se trasladó
+                 a Londres para proseguir una carrera artística.
+                <br>
+                <br>
+                <div id="alerta" class="alert alert-info" role="alert">
+                  Escucha una de sus canciones <a href="https://www.youtube.com/watch?v=2Vv-BfVoq4g" class="alert-link" target="_blank">AQUÍ </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
       </div>
     </div>
-    </section>
+  </section>
+  <!--Tipos de productos-->
+  <section id="pro"><!--Si lo cambio sale una linea al costado derecho-->
+  <div class="text-center" pt-5>
+    <h2>Nuestros productos</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-6">
+      <img src="img/cd.jpg" alt="">
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <img src="img/cassette-1.jpg" alt="">
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <img src="img/vi.jpg" alt="">
+    </div>
+  </div>
+  </section>
   <!--Pie de página-->
-  <footer class="pie-pagina">
-    <div class="grupo-1">
-      <div class="box">
+  <section class="pie-pagina">
+    <div class="row" id="grupo-1">
+      <div class="col-sm" id="box">
         <h2>HORARIO DE ATENCIÓN</h2>
         <p>Lunes a Sábado 10:30-18:00</p>
         <br>
@@ -161,7 +248,7 @@
           <p>Envíos a TODO Chile</p>
         </div>
       </div>
-      <div class="box">
+      <div class="col-sm" id="box">
         <h2>SIGUENOS Y CONTACTANOS</h2>
         <div class="insta">
           <p><a href="https://instagram.com/konlyrics?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram" style="color: white;"></i></a></p>
@@ -176,11 +263,11 @@
           <p> +569 12345678</p>
         </div>
       </div>
-      <div class="box">
+      <div class="col-sm" id="box">
         <h2>VISITANOS</h2>
         <P>Estamos ubicados en Puerto Montt</P>
         <div class="dire">
-          <p><i class="fa-solid fa-location-dot"></i></p>
+          <p><a href="#" ><i class="fa-solid fa-location-dot" style="color: white;"></i> </a></p>
           <p>Avenida Siempre Viva 742</p>
         </div>
       </div>
@@ -188,11 +275,11 @@
     <div class="grupo-2">
       <small>&copy; 2023<b>Music Shop</b> - Todos los derechos reservados</small>
     </div>
-  </footer>
+  </section>
 
-    <!--Para que funcionen los elementos de Bootstap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<!--Para que funcionen los elementos de Bootstap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 
 </body>
 </html>
